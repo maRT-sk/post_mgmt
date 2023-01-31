@@ -1,0 +1,27 @@
+{% load static %}
+{#{% load django_htmx %}#}
+{% with version=1 %}
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="utf-8"/>
+		<title>post_mgmt</title>
+		<meta name="description"
+		      content=""/>
+		<meta name="viewport"
+		      content="width=device-width, initial-scale=1"/>
+		<script src="{% static 'js/htmx.min.js' %}"
+		        defer>
+		</script>
+		<script defer
+		        src="https://unpkg.com/alpinejs@3.10.2/dist/cdn.min.js">
+		</script>
+	</head>
+	<body hx-headers='{"X-CSRFToken": "{{ csrf_token }}"}'>
+	<div class="relative">
+		{% block content %}
+		{% endblock %}
+	</div>
+	</body>
+	</html>
+{% endwith %}

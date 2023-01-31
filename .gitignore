@@ -1,0 +1,14 @@
+package.json
+package-lock.json
+db.sqlite3
+*.pyc
+*.sqlite3
+*.env
+/**/.idea/*
+.idea/
+.run/
+/node_modules
+/media
+Dockerfile
+.dockerignore
+/.run/1. Tailwind build.run.xml
