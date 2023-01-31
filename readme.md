@@ -7,7 +7,8 @@ This is a RESTFul API Service written in Python and created in Django.
 - Python 3.10
 - install requirements.txt
 
-Create a virtual environment (.env does not have to be created) and install packages from requirements.txt.
+Create and activate a virtual environment (.env does not have to be created). 
+Install packages from requirements.txt.
 
 ```
 pip install -r .\requirements.txt
